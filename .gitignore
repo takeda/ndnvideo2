@@ -1,7 +1,12 @@
+/build
 /aclocal.m4
 /autom4te.cache
 /config.h.in
 /configure
 /m4-aux/
+/gst/ndnvideo.c
+/test/test-Vala.c
 Makefile.in
+*.stamp
 *.swp
+*~

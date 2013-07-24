@@ -1,7 +1,8 @@
 ACLOCAL_AMFLAGS = -I m4-aux -I m4
 
-SUBDIRS = gst
+SUBDIRS = \
+	src \
+	vapi \
+	gst \
+	test
 
-EXTRA_DIST = \
-	vapi/vala_fix.h \
-	vapi/ccnx.vapi
