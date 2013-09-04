@@ -1,5 +1,5 @@
 AC_INIT([ndnvideo], [0.0.1], [takeda@takeda.tk], [ndnvideo], [https://github.com/takeda/ndnvideo2])
-AC_CONFIG_SRCDIR([src/ccnx_helper.vala])
+AC_CONFIG_SRCDIR([gst/ndnvideo.vala])
 AC_CONFIG_HEADERS([config.h])
 
 AC_CONFIG_AUX_DIR([m4-aux])
