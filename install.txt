@@ -1,0 +1,20 @@
+##################
+ubuntu build steps:
+##################
+
+changes to local environment:
+
+mkdir m4-aux
+change configure.ac to reference gst/ndnvideo.vala
+change gst/ndnvideo.vala 'GNU' to 'GPL'
+install gstreamer ppa: https://launchpad.net/~gstreamer-developers/+archive/ppa
+sudo apt-get install gstreamer1.0*
+install vala ppa: https://launchpad.net/~vala-team/+archive/ppa
+sudo apt-get install valac-0.22
+
+ok, now in ndnvideo2:
+
+autoreconf -is
+./configure
+make
+./make install
