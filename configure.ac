@@ -42,7 +42,7 @@ AC_SUBST(GST_LIBS)
 
 dnl set the plugindir where plugins should be installed (for gst/Makefile.am)
 if test "x${prefix}" = "x$HOME"; then
-	plugindir="$HOME/.gstreamer-1.0/plugins"
+	plugindir="$HOME/.local/share/gstreamer-1.0/plugins"
 else
 	plugindir="\$(libdir)/gstreamer-1.0"
 fi

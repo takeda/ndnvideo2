@@ -107,7 +107,7 @@ public const Gst.PluginDesc gst_plugin_desc = {
 	"Video Streaming over NDN",
 	plugin_init,
 	"0.0.1",
-	"GNU",
+	"GPL",
 	"gst-plugins-ndnvideo",
 	"NDNVideo",
 	"https://github.com/takeda/ndnvideo2"

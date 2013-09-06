@@ -1,0 +1,2 @@
+mkdir -p m4-aux
+autoreconf -is
