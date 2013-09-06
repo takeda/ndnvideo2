@@ -7,14 +7,14 @@ AM_VALAFLAGS = --vapidir=../vapi --pkg ndnvideo
 #	packet_generator.c \
 #	repo_publisher.c
 
-bin_PROGRAMS = testC testVala
+noinst_PROGRAMS = testC testVala
 
 testC_SOURCES = \
 	test-C.c
 
 testC_CFLAGS = -I$(top_srcdir)/src
 testC_LDFLAGS = @OPENSSL_LDFLAGS@ @CCN_LDFLAGS@
-testC_LDADD = ../src/libndnvideo.la -lm @OPENSSL_LIBS@ @CCN_LIBS@
+testC_LDADD = $(top_builddir)/src/libndnvideo.la -lm @OPENSSL_LIBS@ @CCN_LIBS@
 
 testVala_SOURCES = \
 	test-Vala.vala
@@ -24,7 +24,7 @@ testVala_SOURCES = \
 
 testVala_CFLAGS = -I$(top_srcdir)/src @GOBJECT_CFLAGS@
 testVala_LDFLAGS = @OPENSSL_LDFLAGS@ @CCN_LDFLAGS@ @GOBJECT_LDFLAGS@
-testVala_LDADD = ../src/libndnvideo.la -lm @OPENSSL_LIBS@ @CCN_LIBS@ @GOBJECT_LIBS@
+testVala_LDADD = $(top_builddir)/src/libndnvideo.la -lm @OPENSSL_LIBS@ @CCN_LIBS@ @GOBJECT_LIBS@
 
 #myprog_SOURCES = \
 #	ccnx_helper.vala \
