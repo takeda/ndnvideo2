@@ -2,16 +2,20 @@
 ubuntu build steps:
 ##################
 
-changes to local environment:
+
+sh bootstrap
+./configure --prefix=$HOME
+make
+make install
+
+
+
+
+changes to local environment (already done & committed - just notes)
 
 install gstreamer ppa: https://launchpad.net/~gstreamer-developers/+archive/ppa
 sudo apt-get install gstreamer1.0*
 install vala ppa: https://launchpad.net/~vala-team/+archive/ppa
 sudo apt-get install valac-0.22
 
-ok, now in ndnvideo2:
 
-sh bootstrap
-./configure --prefix=$HOME
-make
-make install
